@@ -1,16 +1,15 @@
 :root {
   color-scheme: light;
-  --ink: #20242a;
-  --muted: #5d6570;
-  --paper: #f7f3eb;
+  --ink: #181818;
+  --muted: #5f5f5f;
+  --paper: #f7f7f7;
   --panel: #ffffff;
-  --gold: #d7a72d;
-  --gold-dark: #8b6816;
-  --red: #a43f3b;
-  --blue: #244f63;
-  --teal: #2f6f6d;
-  --line: #ded6c9;
-  --shadow: 0 16px 42px rgba(28, 31, 35, 0.13);
+  --accent: #b51f2a;
+  --accent-dark: #861720;
+  --black: #111111;
+  --charcoal: #242424;
+  --line: #e2e2e2;
+  --shadow: 0 16px 42px rgba(0, 0, 0, 0.12);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -49,7 +48,7 @@ a {
   gap: clamp(14px, 2.5vw, 28px);
   min-height: 76px;
   padding: 12px clamp(18px, 4vw, 48px);
-  background: rgba(247, 243, 235, 0.96);
+  background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(18px);
 }
@@ -67,8 +66,8 @@ a {
   height: 48px;
   place-items: center;
   border-radius: 50%;
-  background: radial-gradient(circle at 32% 26%, #ffe79a, var(--gold) 52%, var(--gold-dark));
-  color: #241701;
+  background: radial-gradient(circle at 32% 26%, #ff7a82, var(--accent) 56%, var(--accent-dark));
+  color: #ffffff;
   font-weight: 900;
   letter-spacing: 0;
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.44);
@@ -100,11 +99,11 @@ nav a,
 
 nav a:hover,
 .header-call:hover {
-  border-color: var(--gold);
+  border-color: var(--accent);
 }
 
 .header-call {
-  color: var(--red);
+  color: var(--accent);
   font-weight: 800;
   white-space: nowrap;
 }
@@ -150,7 +149,7 @@ nav a:hover,
 
 .eyebrow {
   margin: 0 0 10px;
-  color: var(--gold);
+  color: var(--accent);
   font-size: 0.76rem;
   font-weight: 900;
   letter-spacing: 0.12em;
@@ -212,9 +211,9 @@ h3 {
 }
 
 .button.primary {
-  background: linear-gradient(180deg, #e4bb42, var(--gold));
-  color: #201704;
-  box-shadow: 0 8px 18px rgba(139, 104, 22, 0.18);
+  background: linear-gradient(180deg, #cf303b, var(--accent));
+  color: #ffffff;
+  box-shadow: 0 8px 18px rgba(181, 31, 42, 0.2);
 }
 
 .button.secondary,
@@ -225,8 +224,8 @@ h3 {
 }
 
 .button.secondary.dark {
-  background: var(--blue);
-  border-color: var(--blue);
+  background: var(--black);
+  border-color: var(--black);
 }
 
 .availability-band {
@@ -234,7 +233,7 @@ h3 {
   grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.75fr);
   gap: 18px;
   padding: clamp(20px, 4vw, 46px) clamp(18px, 4vw, 48px);
-  background: linear-gradient(135deg, #20242a, #244f63);
+  background: linear-gradient(135deg, #111111, #2a2a2a);
 }
 
 .availability-card,
@@ -326,7 +325,7 @@ input[type="date"]::-webkit-date-and-time-value {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   padding: clamp(18px, 4vw, 48px);
-  background: #e9e0d1;
+  background: #efefef;
 }
 
 .service-grid article {
@@ -377,7 +376,7 @@ input[type="date"]::-webkit-date-and-time-value {
   position: absolute;
   left: 0;
   content: "✓";
-  color: var(--red);
+  color: var(--accent);
   font-weight: 900;
 }
 
@@ -394,7 +393,7 @@ input[type="date"]::-webkit-date-and-time-value {
 
 .song-tools {
   align-items: center;
-  background: linear-gradient(135deg, var(--blue), var(--teal));
+  background: linear-gradient(135deg, #111111, #2a2a2a);
   color: #fff;
 }
 
@@ -418,8 +417,8 @@ input[type="date"]::-webkit-date-and-time-value {
 blockquote {
   margin: 0;
   padding: clamp(22px, 4vw, 38px);
-  border-left: 5px solid var(--gold);
-  background: #fff8eb;
+  border-left: 5px solid var(--accent);
+  background: #fff5f5;
   border-radius: 0 8px 8px 0;
 }
 
@@ -435,7 +434,7 @@ cite {
 }
 
 .contact {
-  background: #20242a;
+  background: var(--black);
   color: #fff;
 }
 
@@ -461,7 +460,7 @@ address a {
 
 footer {
   padding: 24px clamp(18px, 4vw, 48px);
-  background: #111418;
+  background: #080808;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
 }
@@ -476,7 +475,7 @@ footer p {
 
 .song-hero {
   padding: clamp(56px, 8vw, 104px) clamp(18px, 6vw, 84px) clamp(34px, 6vw, 72px);
-  background: linear-gradient(135deg, #20242a, #244f63);
+  background: linear-gradient(135deg, #111111, #2a2a2a);
   color: #fff;
 }
 
@@ -537,8 +536,8 @@ footer p {
 
 .song-list-buttons button:hover,
 .song-list-buttons button.is-active {
-  border-color: var(--gold);
-  background: #fff1c8;
+  border-color: var(--accent);
+  background: #fff1f2;
 }
 
 .song-results {
@@ -584,8 +583,8 @@ footer p {
 }
 
 #song-results th {
-  background: #fbefd2;
-  color: #322b1d;
+  background: #f3f3f3;
+  color: #181818;
   font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -605,7 +604,7 @@ footer p {
   min-height: 66svh;
   align-items: end;
   padding: clamp(64px, 9vw, 124px) clamp(18px, 7vw, 96px);
-  background: #20242a;
+  background: var(--black);
   color: #fff;
 }
 
@@ -636,7 +635,7 @@ footer p {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
   padding: clamp(22px, 5vw, 56px) clamp(18px, 5vw, 64px);
-  background: #e9e0d1;
+  background: #efefef;
 }
 
 .library-steps article {
@@ -649,7 +648,7 @@ footer p {
 .library-steps span {
   display: inline-flex;
   margin-bottom: 18px;
-  color: var(--red);
+  color: var(--accent);
   font-weight: 900;
   letter-spacing: 0.1em;
 }
@@ -690,8 +689,8 @@ footer p {
 }
 
 .moment-grid a:hover {
-  border-color: var(--gold);
-  background: #fff1c8;
+  border-color: var(--accent);
+  background: #fff1f2;
 }
 
 .compact-band {
@@ -771,7 +770,7 @@ footer p {
 .stage-heading span {
   display: inline-flex;
   margin-bottom: 8px;
-  color: var(--red);
+  color: var(--accent);
   font-weight: 900;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -809,7 +808,7 @@ footer p {
   width: 18px;
   min-height: 18px;
   margin-top: 3px;
-  accent-color: var(--gold-dark);
+  accent-color: var(--accent);
 }
 
 @media (max-width: 1100px) {
@@ -852,6 +851,16 @@ footer p {
   .library-steps,
   .library-feature {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1240px) and (min-width: 1101px) {
+  .availability-card {
+    grid-template-columns: minmax(0, 1fr) repeat(3, minmax(98px, 0.42fr));
+  }
+
+  .availability-card button {
+    grid-column: 1 / -1;
   }
 }
 

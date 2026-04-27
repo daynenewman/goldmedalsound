@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Color Scheme Preview | Gold Medal Sound</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .palette-page {
+        padding: clamp(24px, 5vw, 56px);
+      }
+
+      .palette-intro {
+        max-width: 820px;
+        margin-bottom: 28px;
+      }
+
+      .palette-intro h1 {
+        font-size: clamp(2.1rem, 5vw, 4rem);
+      }
+
+      .palette-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .palette-card {
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--paper);
+        box-shadow: var(--shadow);
+      }
+
+      .palette-sample {
+        padding: 24px;
+        color: var(--ink);
+      }
+
+      .palette-hero {
+        padding: 28px;
+        background: linear-gradient(135deg, var(--blue), var(--teal));
+        color: #fff;
+      }
+
+      .palette-hero h2 {
+        margin-bottom: 10px;
+        font-size: clamp(1.7rem, 3vw, 2.5rem);
+      }
+
+      .palette-hero p {
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      .palette-card-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+        margin-top: 18px;
+      }
+
+      .mini-card {
+        padding: 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+      }
+
+      .swatches {
+        display: flex;
+        gap: 8px;
+        margin: 0 0 18px;
+      }
+
+      .swatches span {
+        width: 36px;
+        height: 36px;
+        border-radius: 999px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .palette-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .scheme-rose {
+        --ink: #272126;
+        --muted: #665c63;
+        --paper: #fbf5f4;
+        --panel: #ffffff;
+        --gold: #d9ad42;
+        --gold-dark: #8a6718;
+        --red: #a94f5f;
+        --blue: #3d4f61;
+        --teal: #6f7f78;
+        --line: #eadad9;
+      }
+
+      .scheme-champagne {
+        --ink: #242526;
+        --muted: #62605b;
+        --paper: #f8f1e7;
+        --panel: #fffdf9;
+        --gold: #cfa146;
+        --gold-dark: #7f5d1c;
+        --red: #9b4b42;
+        --blue: #344f5b;
+        --teal: #58746f;
+        --line: #e6d8c6;
+      }
+
+      .scheme-sage {
+        --ink: #202825;
+        --muted: #5d6762;
+        --paper: #f3f7f1;
+        --panel: #ffffff;
+        --gold: #d0a33f;
+        --gold-dark: #7f621c;
+        --red: #a6534e;
+        --blue: #2f4f55;
+        --teal: #5f7f70;
+        --line: #dbe6d8;
+      }
+
+      .scheme-plum {
+        --ink: #25202a;
+        --muted: #645d69;
+        --paper: #f7f2f8;
+        --panel: #ffffff;
+        --gold: #d4a53d;
+        --gold-dark: #80611b;
+        --red: #9a4a64;
+        --blue: #383f5d;
+        --teal: #586f79;
+        --line: #e3d7e7;
+      }
+
+      .scheme-cranberry {
+        --ink: #251f21;
+        --muted: #665f61;
+        --paper: #faf4f1;
+        --panel: #ffffff;
+        --gold: #d2a64a;
+        --gold-dark: #846221;
+        --red: #9e2f35;
+        --blue: #303f4a;
+        --teal: #5e716d;
+        --line: #ead8d2;
+      }
+
+      .scheme-ruby {
+        --ink: #241f22;
+        --muted: #635d61;
+        --paper: #f8f3ef;
+        --panel: #ffffff;
+        --gold: #cfa34a;
+        --gold-dark: #7f6020;
+        --red: #b43f3d;
+        --blue: #273949;
+        --teal: #4f6865;
+        --line: #e6d6cf;
+      }
+
+      @media (max-width: 820px) {
+        .palette-grid,
+        .palette-card-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="palette-page">
+      <section class="palette-intro">
+        <p class="eyebrow">Gold Medal Sound</p>
+        <h1>Color Scheme Preview</h1>
+        <p>These keep the site universal and event-friendly, but soften the feel for wedding clients without going overly pink or feminine.</p>
+      </section>
+
+      <section class="palette-grid" aria-label="Color scheme options">
+        <article class="palette-card scheme-rose">
+          <div class="palette-hero">
+            <p class="eyebrow">Option 1</p>
+            <h2>Rose Gold Evening</h2>
+            <p>Warm, romantic, and polished. Best if weddings are the primary audience.</p>
+          </div>
+          <div class="palette-sample">
+            <div class="swatches"><span style="background:#fbf5f4"></span><span style="background:#a94f5f"></span><span style="background:#3d4f61"></span><span style="background:#d9ad42"></span></div>
+            <div class="palette-card-row">
+              <div class="mini-card"><h3>Check Your Date</h3><p>Soft paper background, strong action color.</p></div>
+              <div class="mini-card"><h3>Client Center</h3><p>Still professional for school and company events.</p></div>
+            </div>
+            <div class="palette-actions"><span class="button primary">Primary CTA</span><span class="button secondary dark">Secondary</span></div>
+          </div>
+        </article>
+
+        <article class="palette-card scheme-champagne">
+          <div class="palette-hero">
+            <p class="eyebrow">Option 2</p>
+            <h2>Champagne Slate</h2>
+            <p>Classic, upscale, and very broad. The safest all-around wedding and event palette.</p>
+          </div>
+          <div class="palette-sample">
+            <div class="swatches"><span style="background:#f8f1e7"></span><span style="background:#9b4b42"></span><span style="background:#344f5b"></span><span style="background:#cfa146"></span></div>
+            <div class="palette-card-row">
+              <div class="mini-card"><h3>Check Your Date</h3><p>Elegant without feeling too soft.</p></div>
+              <div class="mini-card"><h3>Song Lists</h3><p>Works well for proms, reunions, and corporate events.</p></div>
+            </div>
+            <div class="palette-actions"><span class="button primary">Primary CTA</span><span class="button secondary dark">Secondary</span></div>
+          </div>
+        </article>
+
+        <article class="palette-card scheme-sage">
+          <div class="palette-hero">
+            <p class="eyebrow">Option 3</p>
+            <h2>Sage Celebration</h2>
+            <p>Fresh, calm, and modern. Good for barn venues, garden weddings, and family events.</p>
+          </div>
+          <div class="palette-sample">
+            <div class="swatches"><span style="background:#f3f7f1"></span><span style="background:#a6534e"></span><span style="background:#2f4f55"></span><span style="background:#d0a33f"></span></div>
+            <div class="palette-card-row">
+              <div class="mini-card"><h3>Timeline Planner</h3><p>Friendly and organized.</p></div>
+              <div class="mini-card"><h3>Availability</h3><p>Approachable, not flashy.</p></div>
+            </div>
+            <div class="palette-actions"><span class="button primary">Primary CTA</span><span class="button secondary dark">Secondary</span></div>
+          </div>
+        </article>
+
+        <article class="palette-card scheme-plum">
+          <div class="palette-hero">
+            <p class="eyebrow">Option 4</p>
+            <h2>Plum & Gold</h2>
+            <p>More dramatic and reception-like. Best if we want a richer evening-event feeling.</p>
+          </div>
+          <div class="palette-sample">
+            <div class="swatches"><span style="background:#f7f2f8"></span><span style="background:#9a4a64"></span><span style="background:#383f5d"></span><span style="background:#d4a53d"></span></div>
+            <div class="palette-card-row">
+              <div class="mini-card"><h3>Reception Energy</h3><p>Memorable without becoming nightclub-heavy.</p></div>
+              <div class="mini-card"><h3>Client Tools</h3><p>Still readable and clean.</p></div>
+            </div>
+            <div class="palette-actions"><span class="button primary">Primary CTA</span><span class="button secondary dark">Secondary</span></div>
+          </div>
+        </article>
+
+        <article class="palette-card scheme-cranberry">
+          <div class="palette-hero">
+            <p class="eyebrow">Option 5</p>
+            <h2>Cranberry Tuxedo</h2>
+            <p>Red-forward but controlled. The red becomes a premium accent, balanced by charcoal, soft ivory, and muted green-gray.</p>
+          </div>
+          <div class="palette-sample">
+            <div class="swatches"><span style="background:#faf4f1"></span><span style="background:#9e2f35"></span><span style="background:#303f4a"></span><span style="background:#d2a64a"></span></div>
+            <div class="palette-card-row">
+              <div class="mini-card"><h3>Check Your Date</h3><p>Red adds urgency without making the whole page loud.</p></div>
+              <div class="mini-card"><h3>Wedding Tools</h3><p>Warm enough for couples, polished enough for any event.</p></div>
+            </div>
+            <div class="palette-actions"><span class="button primary">Primary CTA</span><span class="button secondary dark">Secondary</span></div>
+          </div>
+        </article>
+
+        <article class="palette-card scheme-ruby">
+          <div class="palette-hero">
+            <p class="eyebrow">Option 6</p>
+            <h2>Ruby Ballroom</h2>
+            <p>More celebratory and energetic. Still restrained, but the red is brighter and more noticeable.</p>
+          </div>
+          <div class="palette-sample">
+            <div class="swatches"><span style="background:#f8f3ef"></span><span style="background:#b43f3d"></span><span style="background:#273949"></span><span style="background:#cfa34a"></span></div>
+            <div class="palette-card-row">
+              <div class="mini-card"><h3>Reception Energy</h3><p>Great for a DJ brand that wants a little more punch.</p></div>
+              <div class="mini-card"><h3>Client Center</h3><p>Dark blue keeps the red from taking over.</p></div>
+            </div>
+            <div class="palette-actions"><span class="button primary">Primary CTA</span><span class="button secondary dark">Secondary</span></div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
