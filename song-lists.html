@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Live Song Lists | Gold Medal Sound</title>
+    <meta name="description" content="Live requested-song lists for weddings, dances, parties, and events, powered by GigBuilder request trends.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Gold Medal Sound home">
+        <span class="brand-mark">GMS</span>
+        <span>
+          <strong>Gold Medal Sound</strong>
+          <small>Mobile DJ Service</small>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#weddings">Weddings</a>
+        <a href="index.html#schools">School Events</a>
+        <a href="index.html#events">Parties</a>
+        <a href="wedding-timeline.html">Timeline</a>
+        <a href="song-lists.html">Song Lists</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="header-call" href="tel:+19202097890">920.209.7890</a>
+    </header>
+
+    <main class="song-page">
+      <section class="song-hero">
+        <p class="eyebrow">Updated from GigBuilder request trends</p>
+        <h1>Live song lists by era and event moment.</h1>
+        <p>These lists pull from GigBuilder’s public music-list feed, the same source used by the current Gold Medal Sound era pages. Pick a list to load the latest ranked requests.</p>
+      </section>
+
+      <section class="song-browser" aria-label="Live music lists">
+        <aside class="song-picker">
+          <h2>Song Lists</h2>
+          <div id="song-list-buttons" class="song-list-buttons"></div>
+        </aside>
+
+        <section class="song-results" aria-live="polite">
+          <div class="song-results-header">
+            <div>
+              <p class="eyebrow" id="song-source-label">Live list</p>
+              <h2 id="song-list-title">Choose a list</h2>
+            </div>
+            <a class="button secondary dark" id="song-source-link" href="https://www.gigbuilder.com" target="_blank" rel="noreferrer">Source</a>
+          </div>
+          <div id="song-status" class="song-status">Loading songs...</div>
+          <div id="song-results"></div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Gold Medal Sound. Song rankings are provided by GigBuilder request-list data.</p>
+    </footer>
+
+    <script src="songs.js"></script>
+  </body>
+</html>

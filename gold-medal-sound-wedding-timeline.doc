@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Gold Medal Sound Wedding Timeline Planner</title>
+    <style>
+      body {
+        color: #222;
+        font-family: Arial, sans-serif;
+        line-height: 1.35;
+      }
+
+      h1 {
+        font-size: 28px;
+        margin: 0 0 6px;
+      }
+
+      h2 {
+        font-size: 20px;
+        margin: 0 0 8px;
+      }
+
+      article {
+        margin: 0 0 22px;
+        page-break-inside: avoid;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        margin: 0 0 7px;
+      }
+
+      .heading {
+        border-bottom: 2px solid #222;
+        margin-bottom: 22px;
+        padding-bottom: 12px;
+      }
+
+      .timeframe {
+        display: block;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .box {
+        display: inline-block;
+        width: 34px;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="heading">
+      <p>Gold Medal Sound</p>
+      <h1>Wedding Timeline Planner</h1>
+      <p>Wedding DJ service for Appleton, Oshkosh, Green Bay, the Fox Valley, and Northeast Wisconsin.</p>
+    </div>
+
+    <article>
+      <span class="timeframe">6+ months</span>
+      <h2>Build the foundation.</h2>
+      <ul>
+        <li><span class="box">[ ]</span>Settle on a budget</li>
+        <li><span class="box">[ ]</span>Start planning and create a wedding binder</li>
+        <li><span class="box">[ ]</span>Hire a wedding planner, if needed</li>
+        <li><span class="box">[ ]</span>Decide on a guest list and compile addresses</li>
+        <li><span class="box">[ ]</span>Select a venue and date</li>
+        <li><span class="box">[ ]</span>Select a wedding party</li>
+        <li><span class="box">[ ]</span>Research and compare vendors</li>
+        <li><span class="box">[ ]</span>Book ceremony music and Gold Medal Sound</li>
+        <li><span class="box">[ ]</span>Book photographer and videographer</li>
+        <li><span class="box">[ ]</span>Book florist, caterer, and officiant</li>
+        <li><span class="box">[ ]</span>Plan and book honeymoon</li>
+        <li><span class="box">[ ]</span>Create wedding website</li>
+        <li><span class="box">[ ]</span>Secure room blocks for guests</li>
+        <li><span class="box">[ ]</span>Select invitations and mail save-the-date cards</li>
+        <li><span class="box">[ ]</span>Find and order the dress</li>
+      </ul>
+    </article>
+
+    <article>
+      <span class="timeframe">4-5 months</span>
+      <h2>Lock in the visible details.</h2>
+      <ul>
+        <li><span class="box">[ ]</span>Buy shoes and veil</li>
+        <li><span class="box">[ ]</span>Register for gifts</li>
+        <li><span class="box">[ ]</span>Order tuxes and bridesmaid dresses</li>
+        <li><span class="box">[ ]</span>Order cake</li>
+        <li><span class="box">[ ]</span>Reserve wedding night accommodations</li>
+        <li><span class="box">[ ]</span>Secure wedding day transportation</li>
+        <li><span class="box">[ ]</span>Secure rehearsal dinner venue</li>
+        <li><span class="box">[ ]</span>Order favors and reserve rentals</li>
+        <li><span class="box">[ ]</span>Schedule salon and spa appointments</li>
+        <li><span class="box">[ ]</span>Purchase rings</li>
+        <li><span class="box">[ ]</span>Talk to florist about ceremony and reception needs</li>
+      </ul>
+    </article>
+
+    <article>
+      <span class="timeframe">2-3 months</span>
+      <h2>Shape the ceremony and reception flow.</h2>
+      <ul>
+        <li><span class="box">[ ]</span>Write vows and select readings</li>
+        <li><span class="box">[ ]</span>Mail wedding invitations</li>
+        <li><span class="box">[ ]</span>Plan the day-of timeline</li>
+        <li><span class="box">[ ]</span>Have a dress fitting</li>
+        <li><span class="box">[ ]</span>Finalize menu</li>
+        <li><span class="box">[ ]</span>Send photo wish list to photographer</li>
+        <li><span class="box">[ ]</span>Mail rehearsal dinner invitations</li>
+        <li><span class="box">[ ]</span>Test hair, makeup, and style details</li>
+        <li><span class="box">[ ]</span>Choose key songs for ceremony, entrances, dances, and last song</li>
+      </ul>
+    </article>
+
+    <article>
+      <span class="timeframe">1 month</span>
+      <h2>Confirm the plan.</h2>
+      <ul>
+        <li><span class="box">[ ]</span>Obtain marriage license and copies</li>
+        <li><span class="box">[ ]</span>Print programs</li>
+        <li><span class="box">[ ]</span>Follow up with guests who have not RSVP'd</li>
+        <li><span class="box">[ ]</span>Have a dress fitting</li>
+        <li><span class="box">[ ]</span>Assign seats</li>
+        <li><span class="box">[ ]</span>Buy wedding party gifts</li>
+        <li><span class="box">[ ]</span>Plan and make guest welcome bags</li>
+        <li><span class="box">[ ]</span>Request name-change documents, if needed</li>
+        <li><span class="box">[ ]</span>Review final reception timeline with Gold Medal Sound</li>
+      </ul>
+    </article>
+
+    <article>
+      <span class="timeframe">Last 2 weeks</span>
+      <h2>Finish, breathe, enjoy.</h2>
+      <ul>
+        <li><span class="box">[ ]</span>Finalize head count with caterer</li>
+        <li><span class="box">[ ]</span>Make seating cards and menus</li>
+        <li><span class="box">[ ]</span>Have final dress fitting</li>
+        <li><span class="box">[ ]</span>Complete final salon appointments</li>
+        <li><span class="box">[ ]</span>Send final payments and set aside vendor tips</li>
+        <li><span class="box">[ ]</span>Relax, enjoy, and have fun</li>
+      </ul>
+    </article>
+  </body>
+</html>
