@@ -248,13 +248,18 @@ h3 {
 }
 
 .availability-card {
-  grid-template-columns: minmax(240px, 0.85fr) repeat(3, minmax(120px, 0.45fr)) minmax(170px, auto);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: center;
   align-content: center;
 }
 
 .availability-card > div {
-  max-width: 360px;
+  grid-column: 1 / -1;
+  max-width: 760px;
+}
+
+.availability-card button {
+  grid-column: 1 / -1;
 }
 
 .availability-card h2,
@@ -860,22 +865,6 @@ footer p {
   .library-steps,
   .library-feature {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 1240px) and (min-width: 1101px) {
-  .availability-card {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    align-content: center;
-  }
-
-  .availability-card > div {
-    grid-column: 1 / -1;
-    max-width: 560px;
-  }
-
-  .availability-card button {
-    grid-column: 1 / -1;
   }
 }
 
