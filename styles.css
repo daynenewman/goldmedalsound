@@ -805,19 +805,16 @@ footer p {
   }
 
   nav {
+    display: flex;
+    flex-wrap: wrap;
     grid-column: 1 / -1;
     justify-content: flex-start;
-    overflow-x: auto;
+    overflow: visible;
     padding: 2px 0 6px;
-    scrollbar-width: none;
-  }
-
-  nav::-webkit-scrollbar {
-    display: none;
   }
 
   nav a {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
     padding: 8px 10px;
     border: 1px solid var(--line);
     border-radius: 999px;
@@ -1008,15 +1005,24 @@ footer p {
   }
 
   nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-column: auto;
     width: 100%;
-    margin: 0 -2px;
-    gap: 7px;
+    margin: 0;
+    gap: 6px;
   }
 
   nav a {
-    padding: 7px 9px;
-    font-size: 0.86rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    padding: 7px 6px;
+    text-align: center;
+    font-size: 0.78rem;
+    line-height: 1.05;
+    white-space: normal;
   }
 
   .header-call {
@@ -1075,7 +1081,13 @@ footer p {
 
   select,
   input {
+    min-width: 0;
     min-height: 44px;
+  }
+
+  .client-card label,
+  .availability-card label {
+    min-width: 0;
   }
 
   .intro,
