@@ -1,8 +1,8 @@
 const songLists = [
   {
-    label: "Top All-Time Requests",
+    label: "Top 200 Songs",
     key: "top200",
-    count: 100,
+    count: 200,
     sourcePath: "/song-lists/top-200-2000s-2/",
   },
   {
@@ -18,9 +18,9 @@ const songLists = [
     sourcePath: "/song-lists/wedding-reception-first-dance/",
   },
   {
-    label: "Top 100 Songs of the 2010s",
+    label: "Top 200 Songs of the 2010s",
     key: "decade_2010",
-    count: 100,
+    count: 200,
     sourcePath: "/song-lists/top-200-songs-2010s/",
   },
   {
@@ -36,27 +36,27 @@ const songLists = [
     sourcePath: "/song-lists/top-200-1990s/",
   },
   {
-    label: "Top 100 Songs of the 1980s",
+    label: "Top 200 Songs of the 1980s",
     key: "decade_1980",
-    count: 100,
+    count: 200,
     sourcePath: "/song-lists/top-200-1980s/",
   },
   {
-    label: "Top 100 Songs of the 1970s",
+    label: "Top 200 Songs of the 1970s",
     key: "decade_1970",
-    count: 100,
+    count: 200,
     sourcePath: "/song-lists/top-100-1970s/",
   },
   {
-    label: "Top 75 Songs of the 1960s",
+    label: "Top 100 Songs of the 1960s",
     key: "decade_1960",
-    count: 75,
+    count: 100,
     sourcePath: "/song-lists/top-75-songsof-1960s/",
   },
   {
-    label: "Top 50 Songs of the 1950s",
+    label: "Top 100 Songs of the 1950s",
     key: "decade_1950",
-    count: 50,
+    count: 100,
     sourcePath: "/song-lists/top-50-songs-1950s/",
   },
   {
@@ -72,7 +72,6 @@ const resultsContainer = document.querySelector("#song-results");
 const statusElement = document.querySelector("#song-status");
 const titleElement = document.querySelector("#song-list-title");
 const sourceLabelElement = document.querySelector("#song-source-label");
-const sourceLinkElement = document.querySelector("#song-source-link");
 let activeRequestId = 0;
 
 function slugify(value) {
@@ -105,7 +104,6 @@ function loadGigBuilderList(list) {
 
   titleElement.textContent = list.label;
   sourceLabelElement.textContent = `${list.count} ranked requests`;
-  sourceLinkElement.href = `https://www.goldmedalsound.com${list.sourcePath}`;
   resultsContainer.innerHTML = "";
   statusElement.hidden = false;
   statusElement.textContent = "Loading songs...";
